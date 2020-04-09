@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="latex-plot-utils-baltoli", # Replace with your own username
+    name="latex-plot-utils", # Replace with your own username
     version="0.0.1",
     author="Bruce Collie",
     author_email="brucecollie82@gmail.com",
