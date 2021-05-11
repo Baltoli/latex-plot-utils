@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="latex-plot-utils", # Replace with your own username
-    version="1.1.0",
+    version="1.2.0",
     author="Bruce Collie",
     author_email="brucecollie82@gmail.com",
     description="Helpers for Matplotlib plots in LaTeX",

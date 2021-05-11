@@ -18,6 +18,12 @@ def default_text_width() -> Points:
     """
     return Points(505.89)
 
+def thesis_text_width_in() -> Inches:
+    """
+    The width of a text block in the Edinburgh thesis style, in inches.
+    """
+    return Inches(5.70978)
+
 def default_ppi() -> PPI:
     """
     The number of LaTeX points contained in one inch of paper space
@@ -44,4 +50,14 @@ def text_fig_size(w: TextFrac, h: TextFrac) -> Tuple[Inches, Inches]:
     return (
         Inches(w * textwidth_in),
         Inches(h * textwidth_in)
+    )
+
+def thesis_fig_size(w: TextFrac, h: TextFrac) -> Tuple[Inches, Inches]:
+    """
+    Get the size (in inches) of a figure specified in a thesis document to
+    occupy the stated fraction of the text width.
+    """
+    return (
+        Inches(w * thesis_text_width_in()),
+        Inches(h * thesis_text_width_in())
     )
